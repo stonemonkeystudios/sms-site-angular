@@ -9,6 +9,11 @@
       "outDir": "dist",
       "assets": [
         "assets",
+        "img",
+        "js",
+        "css",
+        "font",
+        "fonts",
         "favicon.ico"
       ],
       "index": "index.html",
@@ -19,7 +24,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "css/min/custom-min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

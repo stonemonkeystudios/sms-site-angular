@@ -1,20 +1,481 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="loader-wrapper">
+  <div id="loader"></div>
+
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<!--Navigation-->
+<div class="navbar-fixed">
+  <nav id="nav_f" class="default_color" role="navigation">
+      <div class="container">
+          <div class="nav-wrapper">
+          <a href="#" id="logo-container" class="brand-logo"><img style="margin-top:4px;height:54px;" src="img/logo.png"><span style="padding: 19px;vertical-align: top;">Stone Monkey Studios</span></a>
+              <ul class="right hide-on-med-and-down">
+                  <li><a href="#intro">Service</a></li>
+                  <li><a href="#work">Work</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+              <ul id="nav-mobile" class="side-nav">
+                  <li><a href="#intro">Service</a></li>
+                  <li><a href="#work">Work</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          </div>
+      </div>
+  </nav>
+</div>
+
+<!--Hero-->
+<div class="parallax-container section no-pad-bot" style="height:800px; max-height:800px;">
+  <div class="parallax">
+      <!--<canvas style="display:block" id="bg"></canvas>-->
+      <img src="img/bg.png" style="image-rendering: pixelated;">
+  </div>
+  <!--
+  <div class="container">
+      <h1 class="text_h center header cd-headline letters type">
+          <span>I Love</span> 
+          <span class="cd-words-wrapper waiting">
+              <b class="is-visible">creating</b>
+              <b>designing</b>
+              <b>developing</b>
+          </span>
+      </h1>
+  </div>
+  -->
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+  <div class="container">
+      <div class="row">
+          <div  class="col s12">
+              <h2 class="center header text_h2"> Sometimes you need a man. Sometimes you need a<span class="span_h2"> monkey  </span>. Don't send a man to do a<span class="span_h2"> monkey's </span>job </h2>
+          </div>
+
+          <div  class="col s12 m4 l4">
+              <div class="center promo promo-example">
+                  <i class="mdi-hardware-gamepad"></i>
+                  <h5 class="promo-caption">Games: we make them</h5>
+                  <p class="light center">We can code. We can make art that is better than 63% of painting elephants. We like making games. I don't know, let's just talk about it.</p>
+              </div>
+          </div>
+          <div class="col s12 m4 l4">
+              <div class="center promo promo-example">
+                  <i class="mdi-social-group"></i>
+                  <h5 class="promo-caption">Good with customers</h5>
+                  <p class="light center">Free snuggles. No bullshit. Ok, maybe a little bit of bullshit. You pay the airfaire for snuggles.</p>
+              </div>
+          </div>
+          <div class="col s12 m4 l4">
+              <div class="center promo promo-example">
+                  <i class="mdi-hardware-desktop-windows"></i>
+                  <h5 class="promo-caption">We am computer</h5>
+                  <p class="light center">Sometimes I like computer. Computer I do good running.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="work">
+  <div class="container">
+      <h2 class="header text_b">Work </h2>
+  <h4 class="header text_b" style="padding-left: 10px;">Client Work</h4>
+      <div class="row">
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/cityquest.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">City Quest <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">City Quest <i class="mdi-navigation-close right"></i></span>
+                      <p>Point and click adventure game available for iOS, Android, and PC.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/project2.jpeg">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-close right"></i></span>
+                      <p>Developed specific gameplay mechanics for iOS infinite runner.</p>
+                  </div>
+              </div>
+          </div>
+    <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/project2.jpeg">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-close right"></i></span>
+                      <p>Developed specific gameplay mechanics for iOS infinite runner.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/mrwily.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Fall of Mr. Wily <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Fall of Mr. Wily <i class="mdi-navigation-close right"></i></span>
+                      <p>Ludum Dare XX entry. Go through a series of minigames to live the life of Mr. Wily. For Windows, Mac, and web.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/redbeard.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Redbeard the Borrower <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Redbeard the Borrower <i class="mdi-navigation-close right"></i></span>
+                      <p>Ludum Dare XX entry. 3rd person adventure game for Windows, Mac, and web.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/onewomb.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">One Womb <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">One Womb <i class="mdi-navigation-close right"></i></span>
+                      <p>Ludum Dare XX entry. 2.5D platforming game for Windows and Mac.</p>
+                  </div>
+              </div>
+          </div>
+    <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/project2.jpeg">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-close right"></i></span>
+                      <p>Developed specific gameplay mechanics for iOS infinite runner.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+  <!-- Side Projects --> 
+  <h4 class="header text_b" style="padding-left: 10px;">Side Projects</h4>
+      <div class="row">
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/cityquest.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">City Quest <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">City Quest <i class="mdi-navigation-close right"></i></span>
+                      <p>Point and click adventure game available for iOS, Android, and PC.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/project2.jpeg">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-close right"></i></span>
+                      <p>Developed specific gameplay mechanics for iOS infinite runner.</p>
+                  </div>
+              </div>
+          </div>
+    <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/project2.jpeg">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-close right"></i></span>
+                      <p>Developed specific gameplay mechanics for iOS infinite runner.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/mrwily.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Fall of Mr. Wily <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Fall of Mr. Wily <i class="mdi-navigation-close right"></i></span>
+                      <p>Ludum Dare XX entry. Go through a series of minigames to live the life of Mr. Wily. For Windows, Mac, and web.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/redbeard.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Redbeard the Borrower <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Redbeard the Borrower <i class="mdi-navigation-close right"></i></span>
+                      <p>Ludum Dare XX entry. 3rd person adventure game for Windows, Mac, and web.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/onewomb.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">One Womb <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">One Womb <i class="mdi-navigation-close right"></i></span>
+                      <p>Ludum Dare XX entry. 2.5D platforming game for Windows and Mac.</p>
+                  </div>
+              </div>
+          </div>
+    <div class="col s12 m4 l3">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/project2.jpeg">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Project link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Lazy Tail <i class="mdi-navigation-close right"></i></span>
+                      <p>Developed specific gameplay mechanics for iOS infinite runner.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+  <div class="parallax"><img src="img/parallax_underground.png"></div>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="team">
+  <div class="container">
+      <h2 class="header text_b"> Our Team </h2>
+      <div class="row">
+          <div class="col s12 m3">
+              <div class="card card-avatar">
+                  <div class="waves-effect waves-block waves-light">
+                      <img class="activator" src="img/portrait_ryan.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Ryan Nohr <br/>
+                          <small><em><a class="red-text text-darken-1" href="#">Owner, Programmer</a></em></small></span>
+                      <p>
+                          <a class="blue-text text-lighten-2" href="https://www.facebook.com/ryan.nohr">
+                              <i class="fa fa-facebook-square"></i>
+                          </a>
+                          <a class="blue-text text-lighten-2" href="https://twitter.com/redeyesofnight">
+                              <i class="fa fa-twitter-square"></i>
+                          </a>
+            <!--
+                          <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
+                              <i class="fa fa-google-plus-square"></i>
+                          </a>
+                          -->
+                          <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/ryannohr">
+                              <i class="fa fa-linkedin-square"></i>
+                          </a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m3">
+              <div class="card card-avatar">
+                  <div class="waves-effect waves-block waves-light">
+                      <img class="activator" src="img/portrait_jon.png">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Jon Rasmussen<br/>
+                          <small><em><a class="red-text text-darken-1" href="#">Owner, Artist</a></em></small>
+                      </span>
+                      <p>
+                          <a class="blue-text text-lighten-2" href="https://www.facebook.com/jon.rasmussen">
+                              <i class="fa fa-facebook-square"></i>
+                          </a>
+                          <a class="blue-text text-lighten-2" href="https://twitter.com/jonrasmussen">
+                              <i class="fa fa-twitter-square"></i>
+                          </a>
+                          <a class="blue-text text-lighten-2" href="https://plus.google.com/https://plus.google.com/100440121435974335911">
+                              <i class="fa fa-google-plus-square"></i>
+                          </a>
+                          <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/jonathanrasmussen">
+                              <i class="fa fa-linkedin-square"></i>
+                          </a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+  <div class="container">  
+      <h2 class="header text_b white-text"> Contact </h2>
+          <div class="row">
+              <div class="col l6 s12">
+                  <form id="contactForm" class="col s12" action="" method="POST">
+                      <div class="row">
+                          <div class="input-field col s6">
+                              <i class="mdi-action-account-circle prefix white-text"></i>
+                              <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                              <label for="icon_prefix" class="white-text">First Name</label>
+                          </div>
+                          <div class="input-field col s6">
+                              <i class="mdi-communication-email prefix white-text"></i>
+                              <input id="icon_email" name="email" type="email" class="validate white-text">
+                              <label for="icon_email" class="white-text">Email</label>
+                          </div>
+                          <div class="input-field col s12">
+                              <i class="mdi-editor-mode-edit prefix white-text"></i>
+                              <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                              <label for="icon_prefix2" class="white-text">Message</label>
+                          </div>
+                          <div class="col offset-s8 s1">
+                            <i id="success-checkmark" class="fa fa-check-square fa-3x" aria-hidden="true" style="color:lime;margin-top:-4px;padding:4px;opacity:0;position:absolute;font-size:37px"></i>
+              <i id="contact-waiting" class="fa fa-circle-o-notch fa-3x fa-spin" aria-hidden="true" style="color:white;margin-top:-4px;padding:5px;opacity:0;font-size:xx-large"></i>
+                          </div>
+                          <div class="col s3">
+                              <button id="contact-submit" class="btn waves-effect waves-light red darken-1" type="submit">Submit
+                                  <i class="mdi-content-send right white-text"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="col l3 s12">
+                  <h5 class="white-text">Social</h5>
+                  <ul>
+                      <li>
+                          <a class="white-text" href="https://www.facebook.com/stonemonkeystudios">
+                              <i class="small fa fa-facebook-square white-text"></i> Facebook
+                          </a>
+                      </li>
+                      <li>
+                          <a class="white-text" href="https://github.com/stonemonkeystudios">
+                              <i class="small fa fa-github-square white-text"></i> Github
+                          </a>
+                      </li>
+                      <li>
+                          <a class="white-text" href="https://www.linkedin.com/ompany/stone-monkey-studios">
+                              <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                          </a>
+                      </li>
+            
+                  </ul>
+              </div>
+          </div>
+      </div>
+    <div class="section scrollspy" id="tweets">
+      <div class="container"> 
+        <h2 class="header text_b"> Tweets </h2>
+        <a class="twitter-timeline" data-tweet-limit="3" data-chrome="noheader nofooter transparent" href="https://twitter.com/StoneMonkeyMen"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+      <div class="footer-copyright default_color">
+          <div class="container white-text">
+              &copy; Stone Monkey Studios LLC 2014-<script type="text/javascript">document.write(new Date().getFullYear())</script>
+          </div>
+      </div>
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="min/plugin-min.js"></script>
+  <script src="min/custom-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/tweenjs-0.6.0.combined.js"></script>
+  <script src="js/CSSPlugin.js"></script>
+  <script src="js/bg.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('#contactForm').on('submit', function(e){
+              e.preventDefault();
+      $('#contact-waiting')
+        .animate({opacity: 1}, 250);
+              $.ajax({
+                  type: 'POST',
+                  url: 'contact.php',
+                  data: $('#contactForm').serializeArray(),
+                  success: function(data) {
+          $('#contact-waiting')
+            .delay(250)
+            .animate({opacity: 0}, 250);
+                      $("#success-checkmark")
+            .delay(1000)
+                          .animate({opacity: 1}, 400)
+                          .delay(500)
+                          .animate({opacity: 0}, 250);
+                  }
+              });
+          });
+      });
+  </script>
 

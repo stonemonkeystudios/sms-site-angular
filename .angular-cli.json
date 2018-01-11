@@ -12,6 +12,7 @@
         "img",
         "js",
         "css",
+        "min",
         "font",
         "fonts",
         "favicon.ico"
@@ -24,8 +25,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "css/min/custom-min.css"
+        "styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

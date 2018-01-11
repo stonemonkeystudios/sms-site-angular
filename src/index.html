@@ -5,12 +5,45 @@
   <title>SmsSiteAngular</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="theme-color" content="#2196F3">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="css/min/plugin-min.css" type="text/css" rel="stylesheet">
-  <link href="css/min/custom-min.css" type="text/css" rel="stylesheet" >
+  <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+  <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
 </head>
 <body id="top" class="scrollspy">
   <app-root></app-root>
+  
+  <!--  Scripts-->
+  <script src="min/plugin-min.js"></script>
+  <script src="min/custom-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/tweenjs-0.6.0.combined.js"></script>
+  <script src="js/CSSPlugin.js"></script>
+  <script src="js/bg.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('#contactForm').on('submit', function(e){
+              e.preventDefault();
+      $('#contact-waiting')
+        .animate({opacity: 1}, 250);
+              $.ajax({
+                  type: 'POST',
+                  url: 'contact.php',
+                  data: $('#contactForm').serializeArray(),
+                  success: function(data) {
+          $('#contact-waiting')
+            .delay(250)
+            .animate({opacity: 0}, 250);
+                      $("#success-checkmark")
+            .delay(1000)
+                          .animate({opacity: 1}, 400)
+                          .delay(500)
+                          .animate({opacity: 0}, 250);
+                  }
+              });
+          });
+      });
+  </script>
 </body>
 </html>

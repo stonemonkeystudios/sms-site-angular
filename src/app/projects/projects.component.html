@@ -1,3 +1,17 @@
-<p>
-  projects works!
-</p>
+<h4 class="header text_b" style="padding-left: 10px;">Side Projects</h4>
+<div class="row">
+    <div *ngFor="let project of projects" class="col s12 m4 l3">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="{{project.srcpath}}">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{project.title}} <i class="mdi-navigation-more-vert right"></i></span>
+            <p><a href="#">Project link</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{project.title}} <i class="mdi-navigation-close right"></i></span>
+            <div innerHtml="{{project.description}}"></div>
+        </div>
+    </div>
+</div>

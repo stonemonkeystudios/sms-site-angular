@@ -13,7 +13,7 @@
 </head>
 <body id="top" class="scrollspy">
   <app-root></app-root>
-  
+
   <!--  Scripts-->
   <script src="min/plugin-min.js"></script>
   <script src="min/custom-min.js"></script>
@@ -25,24 +25,24 @@
       $(document).ready(function(){
           $('#contactForm').on('submit', function(e){
               e.preventDefault();
-      $('#contact-waiting')
-        .animate({opacity: 1}, 250);
-              $.ajax({
-                  type: 'POST',
-                  url: 'contact.php',
-                  data: $('#contactForm').serializeArray(),
-                  success: function(data) {
           $('#contact-waiting')
-            .delay(250)
-            .animate({opacity: 0}, 250);
-                      $("#success-checkmark")
-            .delay(1000)
-                          .animate({opacity: 1}, 400)
-                          .delay(500)
-                          .animate({opacity: 0}, 250);
-                  }
+            .animate({opacity: 1}, 250);
+                  $.ajax({
+                      type: 'POST',
+                      url: 'assets/email.php',
+                      data: $('#contactForm').serializeArray(),
+                      success: function(data) {
+              $('#contact-waiting')
+                .delay(250)
+                .animate({opacity: 0}, 250);
+                          $("#success-checkmark")
+                .delay(1000)
+                              .animate({opacity: 1}, 400)
+                              .delay(500)
+                              .animate({opacity: 0}, 250);
+                      }
+                  });
               });
-          });
       });
   </script>
 </body>

@@ -1,5 +1,5 @@
 <?php
- 
+ini_set('display_errors',1);
 header('Content-type: application/json');
  
 $errors = '';
@@ -13,7 +13,7 @@ if(empty($errors))
 	$message = $request->message;
 	$from_name = $request->name;
  
-	$to_email = $from_email;
+	$to_email = "me@jonathanrasmussen.com";
  
 	$contact = "<p><strong>Name:</strong> $from_name</p>
 							<p><strong>Email:</strong> $from_email</p>";
@@ -28,7 +28,8 @@ if(empty($errors))
  
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	$headers .= "From: $from_email\n";
+    $headers .= "From: $from_email\n";
+    $headers .= "To: $to_email\r\n";
 	$headers .= "Reply-To: $from_email";
  
 	mail($to_email,$email_subject,$email_body,$headers);

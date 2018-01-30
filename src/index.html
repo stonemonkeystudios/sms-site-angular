@@ -29,19 +29,20 @@
             .animate({opacity: 1}, 250);
                   $.ajax({
                       type: 'POST',
-                      url: 'assets/email.php',
-                      data: $('#contactForm').serializeArray(),
+                      url: 'assets/mail.php',
+                      data: $('#contactForm').serialize(),
                       success: function(data) {
-              $('#contact-waiting')
-                .delay(250)
-                .animate({opacity: 0}, 250);
-                          $("#success-checkmark")
-                .delay(1000)
-                              .animate({opacity: 1}, 400)
-                              .delay(500)
-                              .animate({opacity: 0}, 250);
-                      }
-                  });
+                        console.log(data); 
+                        $('#contact-waiting')
+                            .delay(250)
+                            .animate({opacity: 0}, 250);
+                                $("#success-checkmark")
+                            .delay(1000)
+                                .animate({opacity: 1}, 400)
+                                .delay(500)
+                                .animate({opacity: 0}, 250);
+                        }
+                    });
               });
       });
   </script>
